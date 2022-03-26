@@ -1,0 +1,5 @@
+.navbar {
+    list-style: none;
+    display: inline-block;
+    border: 5px solid red;
+}
