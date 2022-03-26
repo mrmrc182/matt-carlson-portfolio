@@ -1,5 +1,58 @@
-.navbar {
+*{
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header, footer{
+    background-color: whitesmoke;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+}
+footer{
+    text-align: center;
+}
+main{
+    background-color: green;
+    width: 100%;
+}
+header ul {
     list-style: none;
-    display: inline-block;
     border: 5px solid red;
+    float: right;
+}
+header h1 {
+    flex-wrap: wrap;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 5px solid blue;
+}
+header ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.navbar{
+    position: absolute;
+    right: 0;
+    top: 23px;
+}
+.contact .contact-list{
+    list-style: none;
+    border: 5px solid red;
+    text-align: center;
+}
+.contact .contact-list .contact-list-item{
+    display: inline-block;
+    margin: 15px;
+}
+div{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+#banner{
+    position: fixed;
 }
