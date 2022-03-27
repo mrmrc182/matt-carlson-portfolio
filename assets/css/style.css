@@ -1,21 +1,20 @@
 *{
     box-sizing: border-box;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1.5;
 }
 
 header, footer{
     background-color: whitesmoke;
+    width: 100%;
 }
-header{
-    display: flex;
-    justify-content: space-between;
-}
+
 footer{
     text-align: center;
 }
 main{
-    background-color: green;
-    width: 100%;
+    background-color: #1b3d1b;
+    margin-top: -20px;
 }
 header ul {
     list-style: none;
@@ -26,18 +25,21 @@ header h1 {
     flex-wrap: wrap;
     position: absolute;
     top: 0;
-    left: 0;
+    left: 9px;
     border: 5px solid blue;
 }
 header ul li {
     display: inline-block;
-    margin-left: 25px;
+    margin-right: 25px;
 }
 
 .navbar{
     position: absolute;
     right: 0;
     top: 23px;
+}
+.contact{
+    position: relative;
 }
 .contact .contact-list{
     list-style: none;
@@ -48,11 +50,29 @@ header ul li {
     display: inline-block;
     margin: 15px;
 }
-div{
-    display: flex;
-    flex-wrap: wrap;
+.heading{
     margin-top: 100px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: 5px solid orange;
 }
-#banner{
-    position: fixed;
+.heading-banner {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+h2 {
+    text-align: center;
+}
+h3{
+    text-align: right;
+    position: absolute;
+    right: 14px;
+    top: 207px;
+    background-color: lightgray;
+}
+.work{
+    position: relative;
+    border: 5px solid blue;
 }
