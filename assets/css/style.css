@@ -1,78 +1,87 @@
 *{
     box-sizing: border-box;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     line-height: 1.5;
 }
-
-header, footer{
-    background-color: whitesmoke;
-    width: 100%;
-}
-
-footer{
-    text-align: center;
-}
-main{
-    background-color: #1b3d1b;
-    margin-top: -20px;
-}
-header ul {
-    list-style: none;
+header, footer {
     border: 5px solid red;
-    float: right;
+    max-width: 100%;
+    background-color: orange;
 }
-header h1 {
+body{
+    background-color: green;
+}
+/*Header*/
+.header{
+    display: flex;
     flex-wrap: wrap;
-    position: absolute;
-    top: 0;
-    left: 9px;
-    border: 5px solid blue;
+    justify-content: space-between;
 }
-header ul li {
+.header ul {
+    list-style-type: none;
+    flex-wrap: wrap;
+    margin-left: 25px;
+}
+.header ul li{
+    margin-top: 20px;
+    margin-left: 25px;
     display: inline-block;
-    margin-right: 25px;
+}
+.aboutme {
+    margin: 25px;
+    display: inline-block;
+}
+.aboutme p {
+    position: absolute;
+    left: 100px;
+    display: inline-block;
+    border: 5px solid pink;
+}
+/*Navbar*/
+main {
+    border: 5px solid blue;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.work-grid{
+    border: 5px solid orange;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.work-grid img {
+    max-width: 100%;
+}
+.grid-container h4{
+    position: absolute;
+    left: 50px;
+    bottom: 50px;
+}
+.contact-list{
+    list-style-type: none;
+    text-align: center;
+}
+.contact-list-item{
+    display: inline-block;
+    margin-left: 25px;
 }
 
-.navbar{
-    position: absolute;
-    right: 0;
-    top: 23px;
+figure{
+    border: 5px solid purple;
 }
-.contact{
-    position: relative;
-}
-.contact .contact-list{
-    list-style: none;
-    border: 5px solid red;
+
+footer h4{
     text-align: center;
 }
-.contact .contact-list .contact-list-item{
-    display: inline-block;
-    margin: 15px;
-}
-.heading{
-    margin-top: 100px;
-    margin-left: 5px;
-    margin-right: 5px;
-    border: 5px solid orange;
-}
-.heading-banner {
-    width: 100%;
-    height: 200px;
-    background-size: cover;
-    background-position: center;
-}
-h2 {
-    text-align: center;
-}
-h3{
-    text-align: right;
-    position: absolute;
-    right: 14px;
-    top: 207px;
-    background-color: lightgray;
-}
-.work{
-    position: relative;
-    border: 5px solid blue;
+@media screen and (max-width: 375px) {
+    header, footer, nav, main{
+        flex-direction: column;
+        text-align: center;
+    }
+    .header ul {
+        width: 100%;
+    }
+    .header ul li {
+        text-align: center;
+    }
 }
