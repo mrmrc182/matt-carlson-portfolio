@@ -3,85 +3,125 @@
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     line-height: 1.5;
 }
-header, footer {
+header{
     border: 5px solid red;
-    max-width: 100%;
+    height: 100px;
+    width: 100%;
+    background-color: orange;
+}
+footer{
+    height: 100px;
+    width: 100%;
+    border: 5px solid black;
+    float: left;
     background-color: orange;
 }
 body{
     background-color: green;
 }
 /*Header*/
-.header{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.header h1{
+    margin-left: 25px;
+    font-size: larger;
+    float: left;
 }
 .header ul {
     list-style-type: none;
     flex-wrap: wrap;
     margin-left: 25px;
+    margin-right: 25px;
+    float: right;
 }
 .header ul li{
     margin-top: 20px;
     margin-left: 25px;
     display: inline-block;
 }
-.aboutme {
-    margin: 25px;
-    display: inline-block;
+/*About me*/
+#aboutme h2{
+    display: inline;
+    float: left;
+    width: 30%;
 }
-.aboutme p {
-    position: absolute;
-    left: 100px;
-    display: inline-block;
-    border: 5px solid pink;
+#aboutme p{
+    display: inline;
+    vertical-align: top;
+    float: right;
+    line-height: 28px;
+    width: 70%;
 }
-/*Navbar*/
+/*Main*/
 main {
     border: 5px solid blue;
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
+    width: 100%;
+    float: left;
+}
+main h2{
+    margin: 20px;
+}
+.work{
+    float: right;
+    margin-top: 50px;
+}
+.work-main{
+    border: 5px solid purple;
+    width: 70%;
+    float: right;
+}
+.work-main img{
+    width: 100%;
+}
+
+.gridcontainer{
+    float: right;
+    display: inline;
+    width: 70%
 }
 .work-grid{
     border: 5px solid orange;
-    width: 100%;
-    flex-wrap: wrap;
+    width: 50%;
+    float: right;
+}
+.work h4, p{
+    margin-left: 5px;
 }
 .work-grid img {
-    max-width: 100%;
+    width: 100%;
 }
-.grid-container h4{
+.contact{
+    width: 100%;
+    float: left;
+    margin-top: 50px;
+}
+.title{
     position: absolute;
-    left: 50px;
-    bottom: 50px;
+    left: 100px;
+    width: 30%;
+    float: right;
 }
+
 .contact-list{
     list-style-type: none;
     text-align: center;
+    margin-bottom: 20px;
 }
 .contact-list-item{
-    display: inline-block;
     margin-left: 25px;
-}
-
-figure{
-    border: 5px solid purple;
+    line-height: 2;
+    font-size: 20px;
 }
 
 footer h4{
+    margin-top: 20px;
     text-align: center;
 }
-@media screen and (max-width: 375px) {
-    header, footer, nav, main{
-        flex-direction: column;
-        text-align: center;
-    }
-    .header ul {
-        width: 100%;
-    }
-    .header ul li {
-        text-align: center;
-    }
+.container{
+    background-color: white;
+    width: 30%;
+}
+.container2{
+    background-color: white;
+    width: 70%;
+    position: static;
+    bottom: 50px;
 }
