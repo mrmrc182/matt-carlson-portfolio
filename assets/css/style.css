@@ -19,16 +19,14 @@ footer{
 body{
     background-color: green;
 }
-.heading h3{
-    background-color: whitesmoke;
-    width: 30%;
-    position: relative;
-    bottom: 50px;
-    float: right;
-    padding-left: 20px;
-    font-size: larger;
+ul li a {
+    text-decoration: none;
+    color: black;
 }
 /*Header*/
+.header{
+    padding-bottom: 25px;
+}
 .header h1{
     margin-left: 25px;
     font-size: xx-large;
@@ -38,7 +36,7 @@ body{
     list-style-type: none;
     flex-wrap: wrap;
     margin-left: 25px;
-    margin-right: 25px;
+    margin-right: 50px;
     float: right;
 }
 .header ul li{
@@ -46,18 +44,28 @@ body{
     margin-left: 25px;
     display: inline-block;
 }
+.heading h3{
+    background-color: whitesmoke;
+    width: 30%;
+    position: relative;
+    bottom: 50px;
+    float: right;
+    padding-left: 20px;
+    font-size: larger;
+}
 /*About me*/
-#aboutme h2{
+.aboutme h2{
     display: inline;
     float: left;
     width: 30%;
 }
-#aboutme p{
+.aboutme p{
     display: inline;
     vertical-align: top;
     float: right;
     line-height: 28px;
     width: 70%;
+    margin-left: 50px;
 }
 /*Main*/
 main {
@@ -71,15 +79,26 @@ main h2{
 .work{
     float: right;
     margin-top: 50px;
+    background-color: green;
 }
 .work-main{
     border: 5px solid purple;
     width: 70%;
     height: 426px;
     float: right;
+    opacity: 1;
+    border-radius: 5px;
+}
+#workmain{
+    background-color: white;
 }
 .work-main img{
     width: 100%;
+    opacity: 0.5;
+}
+.work-main img:hover{
+    transition: 0.5s;
+    opacity: 1;
 }
 
 .gridcontainer{
@@ -92,12 +111,18 @@ main h2{
     width: 50%;
     height: 300px;
     float: right;
+    background-color: white;
 }
 .work h4, p{
     margin-left: 5px;
 }
 .work-grid img {
     width: 100%;
+    opacity: 0.5;
+}
+.work-grid img:hover{
+    transition: 0.5s;
+    opacity: 1;
 }
 .contact{
     width: 100%;
@@ -142,6 +167,32 @@ footer h4{
     position: relative;
     bottom: 100px;
 }
-.contact ul li a {
-    text-decoration-style: none;
+@media screen and (max-width: 762px) {
+    header, main, footer {
+        flex-direction: row;
+        align-items: center;
+    }
+    .header{
+        text-align: center;
+    }
+    .work-main{
+        width: 100%;
+        height: auto;
+    }
+    .gridcontainer{
+        width: 100%;
+        height: auto;
+    }
+    .contact{
+        width: 100%;
+    }
+    .title{
+        text-align: center;
+    }
+    .work img {
+        height: 200px;
+    }
+    #workmain{
+        height: 200px;
+    }
 }
