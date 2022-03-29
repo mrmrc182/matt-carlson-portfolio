@@ -4,7 +4,6 @@
     line-height: 1.5;
 }
 header{
-    border: 5px solid red;
     height: 100px;
     width: 100%;
     background-color: orange;
@@ -12,7 +11,6 @@ header{
 footer{
     height: 100px;
     width: 100%;
-    border: 5px solid black;
     float: left;
     background-color: orange;
 }
@@ -61,16 +59,16 @@ ul li a {
 }
 .aboutme h2{
     width: 30%;
+    border-right: 5px solid black;
 }
 .aboutme p{
    width: 70%;
 }
 /*Main*/
 main {
-    border: 5px solid blue;
-    width: 100%;
+   width: 100%;
 }
-#separate{
+.separate{
     height: 50px;
     width: 100%;
 }
@@ -82,12 +80,13 @@ main {
     top: 52px;
 }
 .work-main{
-    border: 5px solid purple;
     width: 70%;
     height: 426px;
     float: right;
     opacity: 1;
     border-radius: 5px;
+    border-spacing: 2px;
+    border-left: 5px solid black;
 }
 #workmain{
     background-color: white;
@@ -108,11 +107,11 @@ main {
     width: 70%
 }
 .work-grid{
-    border: 5px solid orange;
     width: 50%;
     height: 300px;
     float: right;
     background-color: white;
+    border-radius: 5px;
 }
 .work h4, p{
     margin-left: 5px;
@@ -130,18 +129,16 @@ main {
     width: 100%;
     float: left;
     margin-top: 50px;
-    border: 5px solid black;
 }
 .title{
     width: 30%;
-    border: 5px solid pink;
     text-align: right;
     padding-right: 50px;
     font-size: x-large;
 }
 .contact h2{
-    position: relative;
     top: 52px;
+    border-right: 5px solid black;
 }
 .contact-list{
     list-style-type: none;
@@ -171,6 +168,9 @@ footer h4{
     position: relative;
     bottom: 100px;
 }
+#sleepborder, #weightborder{
+    border-left: 5px solid black;
+}
 @media screen and (max-width: 762px) {
     header, main, footer {
         direction: flex;
@@ -188,6 +188,9 @@ footer h4{
     .heading{
         height: 150px;
     }
+    .heading img{
+        height: 150px;
+    }
     .heading h3{
         width: 100%;
         text-align: center;
@@ -202,6 +205,8 @@ footer h4{
     .work-main{
         width: 100%;
         height: auto;
+        margin-bottom: 15px;
+        border: none;
     }
     .gridcontainer{
         width: 100%;
@@ -210,7 +215,6 @@ footer h4{
     }
     .title{
         text-align: left;
-        justify-content: center;
         align-items: center;
         padding-left: 20px;
         border-bottom: 2.5px solid black;
@@ -221,6 +225,9 @@ footer h4{
     }
     .work-grid {
         height: 200px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-radius: 5px;
     }
     .work-grid img{
         height: 200px;
@@ -230,7 +237,7 @@ footer h4{
     }
     main h2 {
         float: center;
-        margin-top: 50px;
+        margin-top: 27px;
     }
     .aboutme {
        align-items: center;
@@ -240,16 +247,19 @@ footer h4{
     .aboutme h2{
         width: 100%;
         text-align: left;
-        padding-left: 10px;
+        padding-left: 20px;
         border-bottom: 2.5px solid black;
+        border-right: 0px;
     }
     .aboutme p{
         width: 100%;
-        padding-top: 20px;
-        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: left;
     }
-    #separate{
+    .separate{
        width: 100%;
+       height: 10px;
     }
     .contact{
         width: 100%;
@@ -261,19 +271,26 @@ footer h4{
     }
     .contact h2{
         align-items: center;
+        border-right: 0px;
         top: 1px;
     }
 }
 @media screen and (max-width: 375px) {
     header, footer, main{
+        display: flex;
+        flex-direction: column;
         width: 100%;
+        text-align: center;
     }
-    main h2{
+    .work h2{
         margin-top: 5px;
+        flex-direction: column;
+        text-align: center;
     }
     .work-main{
         width: 100%;
         height: 190px;
+        margin-bottom: 20px;
      }
     .work-main .container{
          width: 100%;
@@ -281,11 +298,27 @@ footer h4{
     .work-grid{
         width: 100%;
         height: 190px;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
     .work-grid .container2{
         width: 100%;
     }
+    .work-grid img{
+        height: 190px;
+    }
     .aboutme{
-        margin-top: 0px;
+        margin-top: -50px;
+    }
+    .aboutme h2{
+        flex-direction: column;
+        text-align: center;
+    }
+    .contact h2{
+        flex-direction: column;
+        text-align: center;
+    }
+    .title{
+        justify-content: center;
     }
 }
