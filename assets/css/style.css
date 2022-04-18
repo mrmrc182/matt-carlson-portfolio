@@ -4,22 +4,22 @@
     line-height: 1.5;
 }
 :root{
-    --orange: orange;
-    --green: green;
+    --main: rgb(255, 102, 0);
+    --second: rgb(247, 120, 1);
 }
 header{
     height: 100px;
     width: 100%;
-    background-color: var(--orange);
+    background-color: var(--main);
 }
 footer{
     height: 100px;
     width: 100%;
     float: left;
-    background-color: var(--orange);
+    background-color: var(--main);
 }
 body{
-    background-color: var(--green);
+    background-color: var(--second);
 }
 ul li a {
     text-decoration: underline;
