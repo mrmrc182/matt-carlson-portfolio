@@ -125,14 +125,15 @@ main {
 .container{
     background-color: white;
     width: 30%;
+    max-width: 100%;
     position: relative;
-    bottom: 100px;
+    bottom: 137px;
 }
 .container2{
     background-color: white;
     width: 70%;
     position: relative;
-    bottom: 100px;
+    bottom: 109px;
 }
 .work-grid{
     width: 50%;
@@ -291,6 +292,13 @@ footer h4{
         border-right: 0px;
         top: 1px;
     }
+    .container{
+        width: 100%;
+    }
+    .container2{
+        bottom: 139px;
+        width: 100%;
+    }
 }
 @media screen and (max-width: 375px) {
     header, footer, main{
@@ -302,6 +310,7 @@ footer h4{
     .header ul {
         list-style: initial;
         margin: none;
+        margin-bottom: 15px;
         padding: none;
         float: center;
     }
