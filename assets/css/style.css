@@ -127,13 +127,13 @@ main {
     width: 30%;
     max-width: 100%;
     position: relative;
-    bottom: 137px;
+    bottom: 175px;
 }
 .container2{
     background-color: white;
     width: 70%;
     position: relative;
-    bottom: 109px;
+    bottom: 180px;
 }
 .work-grid{
     width: 50%;
@@ -294,6 +294,7 @@ footer h4{
     }
     .container{
         width: 100%;
+        bottom: 125px;
     }
     .container2{
         bottom: 139px;
